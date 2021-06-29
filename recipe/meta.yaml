@@ -22,6 +22,8 @@ outputs:
       host:
         - python >=3.5
         - pip
+        - setuptools
+        - wheel
       run:
         - python >=3.5
 
@@ -32,12 +34,17 @@ outputs:
   - name: typing-extensions
     build:
       noarch: python
+
     requirements:
       run:
         - {{ pin_subpackage(name, exact=True) }}
     test:
       imports:
         - typing_extensions
+      requires:
+        - pip
+      commands:
+        - pip check
 
 about:
   home: https://github.com/python/typing/tree/master/typing_extensions
