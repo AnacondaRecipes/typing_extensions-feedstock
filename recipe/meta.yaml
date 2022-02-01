@@ -20,7 +20,8 @@ outputs:
 
     requirements:
       host:
-        - python >=3.6
+        - python
+        - flit_core >=3.4,<4
         - pip
         - setuptools
         - wheel
@@ -30,6 +31,8 @@ outputs:
     test:
       imports:
         - typing_extensions
+      requires:
+        - python <3.10
 
   - name: typing-extensions
     build:
@@ -38,6 +41,7 @@ outputs:
     requirements:
       run:
         - {{ pin_subpackage(name, exact=True) }}
+
     test:
       imports:
         - typing_extensions
@@ -63,7 +67,7 @@ about:
     Experimental types that will eventually be added to the ``typing``
     module are also included in typing_extensions.
 
-  doc_url: https://github.com/python/typing
+  doc_url: https://typing.readthedocs.io/en/latest/
   dev_url: https://github.com/python/typing
 
 extra:
