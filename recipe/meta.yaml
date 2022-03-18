@@ -34,7 +34,6 @@ outputs:
   - name: typing-extensions
     build:
       noarch: python
-
     requirements:
       run:
         - {{ pin_subpackage(name, exact=True) }}
