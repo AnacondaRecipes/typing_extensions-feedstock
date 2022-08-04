@@ -65,7 +65,7 @@ about:
     Experimental types that will eventually be added to the ``typing``
     module are also included in typing_extensions.
 
-  doc_url: https://github.com/python/typing_extensions/README.md
+  doc_url: https://github.com/python/typing_extensions/blob/main/README.md
   dev_url: https://github.com/python/typing_extensions
 
 extra:
