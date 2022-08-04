@@ -18,7 +18,7 @@ outputs:
   - name: {{ name }}
     build:
       script: python -m pip install --no-deps --ignore-installed .
-      noarch: python
+      # noarch: python
 
     requirements:
       host:
@@ -33,9 +33,10 @@ outputs:
       imports:
         - typing_extensions
 
+
   - name: typing-extensions
     build:
-      noarch: python
+    # noarch: python
     requirements:
       run:
         - {{ pin_subpackage(name, exact=True) }}
@@ -48,7 +49,7 @@ outputs:
         - pip check
 
 about:
-  home: https://github.com/python/typing/tree/master/typing_extensions
+  home: https://github.com/python/typing_extensions
   license: PSF-2.0
   license_family: PSF
   license_file: LICENSE
@@ -64,8 +65,8 @@ about:
     Experimental types that will eventually be added to the ``typing``
     module are also included in typing_extensions.
 
-  doc_url: https://github.com/python/typing
-  dev_url: https://github.com/python/typing
+  doc_url: https://github.com/python/typing_extensions/README.md
+  dev_url: https://github.com/python/typing_extensions
 
 extra:
   recipe-maintainers:
