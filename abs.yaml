@@ -1,0 +1,7 @@
+channels:
+  melody_org: flask-update
+build_parameters:
+  - "--suppress-variables"
+  - "--error-overlinking"
+  - "--error-overdepending"
+  
