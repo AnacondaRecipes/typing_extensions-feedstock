@@ -18,11 +18,11 @@ outputs:
   - name: {{ name }}
     build:
       script: python -m pip install --no-deps --ignore-installed .
-      # noarch: python
 
     requirements:
       host:
         - python
+        - flit-core >=3.4,<4
         - pip
         - setuptools
         - wheel
@@ -32,7 +32,6 @@ outputs:
     test:
       imports:
         - typing_extensions
-
 
   - name: typing-extensions
     build:
