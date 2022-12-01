@@ -22,12 +22,13 @@ outputs:
     requirements:
       host:
         - python
-        - flit-core >=3.4,<4
+        - flit-core 3.6.0
         - pip
         - setuptools
         - wheel
       run:
         - python
+        - flit-core >=3.6,<4
 
     test:
       imports:
