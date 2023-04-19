@@ -28,7 +28,6 @@ outputs:
         - wheel
       run:
         - python
-        - flit-core >=3.6,<4
 
     test:
       imports:
