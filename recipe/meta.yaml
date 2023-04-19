@@ -22,7 +22,7 @@ outputs:
     requirements:
       host:
         - python
-        - flit-core 3.6.0
+        - flit-core 3.8.0
         - pip
         - setuptools
         - wheel
