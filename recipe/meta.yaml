@@ -1,4 +1,4 @@
-{% set name = "typing-extensions" %}
+{% set name = "typing_extensions" %}
 {% set version = "4.7.1" %}
 
 package:
@@ -16,7 +16,7 @@ build:
 outputs:
   - name: {{ name }}
     build:
-      script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation --ignore-installed .
+      script: python -m pip install --no-deps --no-build-isolation --ignore-installed .
 
     requirements:
       host:
