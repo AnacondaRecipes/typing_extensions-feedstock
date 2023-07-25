@@ -23,8 +23,6 @@ outputs:
         - python
         - flit-core >=3.4,<4
         - pip
-        - setuptools
-        - wheel
       run:
         - python
 
