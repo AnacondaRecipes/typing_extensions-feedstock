@@ -32,7 +32,6 @@ outputs:
 
   - name: typing-extensions
     build:
-      noarch: python
     requirements:
       host:
         - python
