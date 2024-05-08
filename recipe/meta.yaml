@@ -10,8 +10,8 @@ source:
   sha256: 83f085bd5ca59c80295fc2a82ab5dac679cbe02b9f33f7d83af68e241bea51b0
 
 build:
-  number: 1
-  skip: true  # [py<=37]
+  number: 0
+  skip: true  # [py<=38]
 
 outputs:
   - name: {{ name }}
