@@ -11,7 +11,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<=38]
+  skip: true  # [py<38]
 
 outputs:
   - name: {{ name }}
@@ -58,7 +58,7 @@ about:
     This means users of older Python versions who are unable to upgrade will not be
     able to take advantage of new types added to the typing module, such as
     typing.Protocol or typing.TypedDict.
-    
+
     The typing_extensions module contains backports of these changes.
     Experimental types that will eventually be added to the ``typing``
     module are also included in typing_extensions.
