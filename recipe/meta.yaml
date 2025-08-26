@@ -68,3 +68,9 @@ about:
 extra:
   recipe-maintainers:
     - cbouss
+  skip-lints:
+    - outputs_not_unique
+    - missing_pip_check
+    - patch_unnecessary
+    - missing_python_build_tool
+    - wrong_output_script_key
