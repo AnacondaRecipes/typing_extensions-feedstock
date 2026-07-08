@@ -1,13 +1,13 @@
 {% set name = "typing_extensions" %}
-{% set version = "4.15.0" %}
+{% set version = "4.16.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: dc983d19a509c94dba722ee6abd33940f7c05a89e243c47e907eb4db6f1a43e5
 
 build:
   number: 0
@@ -17,7 +17,6 @@ outputs:
   - name: {{ name }}
     build:
       script: python -m pip install --no-deps --no-build-isolation --ignore-installed .
-
     requirements:
       host:
         - python
@@ -25,11 +24,9 @@ outputs:
         - pip
       run:
         - python
-
     test:
       imports:
         - typing_extensions
-
   - name: typing-extensions
     build:
     requirements:
@@ -65,6 +62,7 @@ about:
 
   doc_url: https://github.com/python/typing_extensions/blob/main/README.md
   dev_url: https://github.com/python/typing_extensions
+
 extra:
   recipe-maintainers:
     - cbouss
